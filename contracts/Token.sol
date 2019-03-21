@@ -8,9 +8,9 @@ contract Token is MintableToken {
     string public name = "Token";
     string public symbol = "TTT";
     uint8 public decimals = 2;
-    uint public INITIAL_SUPPLY = 1000000;
+    uint public SUPPLY = 1000000; 
 
     constructor() public {
-        mint(msg.sender, INITIAL_SUPPLY);
+        mint(msg.sender, SUPPLY);
     }
 }

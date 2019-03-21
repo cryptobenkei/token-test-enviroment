@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/ethlint/bin/solium.js -d contracts --fix",
     "testrpc": "./startGanache.sh",
-    "coverage": "./node_modules/.bin/solidity-coverage",
+    "coverage":"export NETWORK='coverage' && ./node_modules/.bin/solidity-coverage",
     "compile": "./node_modules/.bin/truffle compile",
     "migrate": "./node_modules/.bin/truffle migrate",
     "test": "./node_modules/.bin/truffle test",
